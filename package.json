@@ -1,0 +1,19 @@
+{
+  "name": "nidzam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "json_server": "json-server --watch db.json",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "exceljs": "^4.2.0",
+    "json-logic-js": "^2.0.0",
+    "json-server": "^0.16.3",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
