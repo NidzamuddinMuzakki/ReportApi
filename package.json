@@ -6,13 +6,10 @@
   "homepage": "https://nidzamuddinmuzakki.github.io/ReportApi",
   "scripts": {
     "json_server": "json-server --watch db.json",
-    "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
-    "client": "cd client && yarn start",
-    "server": "nodemon server.js"
     
+      "start": "node index.js",
+      "dev": "nodemon index.js"
   
-    
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +19,7 @@
     "gh-pages": "^3.1.0",
     "json-logic-js": "^2.0.0",
     "json-server": "^0.16.3",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.7"
   }
 }
