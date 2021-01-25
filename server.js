@@ -690,6 +690,6 @@ server.use(/^(?!\/auth).*$/,  (req, res, next) => {
 
 server.use(router)
 
-server.listen(3000, () => {
+server.listen(rocess.env.PORT || 3000, () => {
   console.log('Run Auth API Server')
 })
