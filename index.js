@@ -659,6 +659,11 @@ server.post('/credential_service/get_user', (req, res) => {
         })
     }
   })
+  server.get('/', (req, res) => {
+    console.log("Welcome To Report Api");
+  
+   
+  })
 
 
 
@@ -688,7 +693,7 @@ server.use(/^(?!\/auth).*$/,  (req, res, next) => {
   }
 })
 
-server.use(router)
+
 const PORT = process.env.PORT ||5000; 
 server.listen(PORT, () => {
   console.log('Run Auth API Server')
