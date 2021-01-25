@@ -6,8 +6,13 @@
   "homepage": "https://nidzamuddinmuzakki.github.io/ReportApi",
   "scripts": {
     "json_server": "json-server --watch db.json",
-    "start": "node server.js",
-    "deploy": "gh-pages -d build"
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js"
+    
+  
+    
   },
   "author": "",
   "license": "ISC",
